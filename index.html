@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>الدكتور ناصر ك. — أبو حماد ناصر الأنصاري</title>
+<meta name="description" content="الملف المهني للدكتور ناصر ك.: أكاديمي وكاتب عربي وإعلامي ومترجم، والمؤسس المشارك لأكاديمية الزميل الدولية.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&family=Libre+Baskerville:wght@400;700&display=swap">
+<style>
+:root{
+  --sage-d:#3F4B34; --sage:#5B6B4C; --sage-l:#4E5D43; --cream:#F3EFE2; --tint:#E4E6D6; --tint2:#D5D9C4;
+  --ink:#1B1B17; --ink2:#2E2E27; --gold-t:#7A5C16; --gold:#B8923A; --gold-l:#D9B65D; --gold-xl:#E7CB82; --on-gold:#2B3322;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:24px}
+body{margin:0;font-family:'Tajawal',sans-serif;background:var(--cream);color:var(--ink);line-height:1.8;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+button{font-family:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:4px}
+
+/* ---------- layout ---------- */
+.shell{display:flex;min-height:100vh}
+.side{position:sticky;top:0;align-self:flex-start;height:100vh;width:260px;flex:0 0 260px;background:var(--sage-d);color:var(--cream);padding:36px 22px;display:flex;flex-direction:column;gap:28px;overflow-y:auto}
+.brand{display:flex;align-items:center;gap:14px}
+.mono{width:56px;height:56px;border-radius:50%;background:var(--gold-l);color:var(--on-gold);display:flex;align-items:center;justify-content:center;font-size:30px;font-weight:900;flex:none}
+.brand b{display:block;font-size:19px;font-weight:800;line-height:1.4}
+.brand span{font-size:14px;font-weight:500;color:var(--tint2)}
+.nav{display:flex;flex-direction:column;gap:2px}
+.nav a{padding:10px 14px;border-radius:10px;font-size:17px;font-weight:500;color:#E9E6D6;transition:background .2s}
+.nav a:hover{background:var(--sage-l);color:#fff}
+.nav a.on{background:var(--gold-l);color:var(--on-gold);font-weight:800}
+.side-foot{margin-top:auto;font-size:13px;color:var(--tint2);line-height:1.7}
+.topbar{display:none}
+main{flex:1;min-width:0}
+section{position:relative}
+.wrap{padding:88px 72px}
+.sec-head{display:flex;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:44px}
+.sec-head .n{font-size:30px;font-weight:800;color:var(--gold-t)}
+.sec-head h2{margin:0;font-size:clamp(44px,6vw,84px);font-weight:900;line-height:1.02}
+.dark{background:var(--sage-d);color:var(--cream)}
+.mid{background:var(--sage);color:var(--cream)}
+.tint{background:var(--tint)}
+.dark .n,.mid .n{color:var(--gold-xl)}
+.lead{margin:0;max-width:700px;font-size:21px;line-height:1.95}
+.eyebrow{display:flex;align-items:center;gap:14px;font-size:18px;font-weight:700;color:var(--gold-t)}
+.eyebrow:before{content:"";width:48px;height:3px;background:var(--gold)}
+.dark .eyebrow,.mid .eyebrow{color:var(--gold-xl)}
+.dark .eyebrow:before,.mid .eyebrow:before{background:var(--gold-l)}
+
+/* ---------- hero ---------- */
+.hero{padding:72px 72px 80px;display:flex;flex-wrap:wrap;align-items:center;gap:56px}
+.hero-txt{flex:1 1 440px;display:flex;flex-direction:column;gap:22px}
+.hero h1{margin:0;font-size:clamp(64px,9vw,120px);font-weight:900;line-height:1.02}
+.hero .pen{font-size:clamp(24px,3vw,34px);font-weight:700;color:var(--sage-l)}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{padding:8px 22px;border-radius:999px;border:2px solid var(--ink);font-size:20px;font-weight:700}
+.chip:first-child{background:var(--sage-d);border-color:var(--sage-d);color:var(--cream)}
+.hero p{margin:0;max-width:600px;font-size:20px;line-height:1.95;color:var(--ink2)}
+.btns{display:flex;flex-wrap:wrap;gap:14px;margin-top:6px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 32px;border-radius:12px;font-size:19px;font-weight:800;border:2px solid var(--sage-d);transition:transform .2s,background .2s}
+.btn.fill{background:var(--sage-d);color:var(--cream)}
+.btn.line{color:var(--sage-d)}
+.btn.gold{background:var(--gold-l);border-color:var(--gold-l);color:var(--on-gold)}
+.btn:hover{transform:translateY(-2px)}
+.portrait{flex:0 1 420px;display:flex;justify-content:center}
+.arch{position:relative;width:380px;max-width:100%;aspect-ratio:3/4}
+.arch:before{content:"";position:absolute;inset:0;transform:translate(-20px,20px);border:3px solid var(--gold);border-radius:190px 190px 0 0}
+.arch div{position:absolute;inset:0;border-radius:190px 190px 0 0;overflow:hidden;background:var(--tint2)}
+.arch img{width:100%;height:100%;object-fit:cover;object-position:50% 8%}
+.stats{background:var(--sage-d);color:var(--cream);padding:48px 72px;display:flex;flex-wrap:wrap;gap:32px}
+.stat{flex:1 1 200px;border-top:3px solid var(--gold-l);padding-top:16px}
+.stat b{display:block;font-size:68px;font-weight:900;color:var(--gold-l);line-height:1}
+.stat span{display:block;font-size:18px;line-height:1.7;margin-top:10px}
+
+/* ---------- qualifications ---------- */
+.quals{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:28px}
+.q{border-top:4px solid var(--ink);padding-top:18px;display:flex;flex-direction:column;gap:8px}
+.q .y{font-size:34px;font-weight:900;color:var(--gold-t);line-height:1.2}
+.q h3{margin:0;font-size:24px;font-weight:800;line-height:1.5}
+.q .i{font-size:18px;font-weight:700;color:var(--sage-l)}
+.q p{margin:0;font-size:16px;line-height:1.8;color:#3A3A32}
+.band{margin-top:40px;background:var(--tint);border-radius:16px;padding:26px 32px;display:flex;flex-wrap:wrap;gap:24px;align-items:center}
+.band h3{margin:0;font-size:22px;font-weight:800;color:var(--sage-d)}
+.band p{margin:0;flex:1 1 300px;font-size:17px;line-height:1.8}
+
+/* ---------- cards / figures ---------- */
+.grid{display:flex;flex-wrap:wrap;gap:28px;align-items:flex-start}
+.fig{flex:1 1 280px;max-width:400px;margin:0;background:#fff;border-radius:6px;padding:12px 12px 18px;box-shadow:0 2px 0 var(--tint2);transition:transform .25s,box-shadow .25s}
+.fig:hover{transform:translateY(-4px);box-shadow:0 10px 24px rgba(40,50,30,.18)}
+.fig button{all:unset;display:block;width:100%;cursor:zoom-in}
+.fig button:focus-visible{outline:3px solid var(--gold);outline-offset:4px}
+.fig img{width:100%;height:auto}
+.fig figcaption{padding:14px 6px 0}
+.fig h4{margin:0;font-size:19px;font-weight:800;line-height:1.6}
+.fig .m{font-size:16px;color:var(--gold-t);font-weight:700;margin-top:4px;line-height:1.7}
+.fig .y{font-size:30px;font-weight:900;color:var(--gold-t);line-height:1.2}
+.fig.sm{max-width:340px;flex-basis:240px}
+.tabs{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-bottom:32px}
+.tab{padding:10px 28px;border-radius:999px;border:2px solid var(--sage-d);background:transparent;color:var(--sage-d);font-size:18px;font-weight:800;transition:background .2s}
+.tab[aria-pressed="true"]{background:var(--sage-d);color:var(--cream)}
+.tabs .link{margin-inline-start:auto;font-size:17px;font-weight:800;color:var(--sage-d);border-bottom:2px solid var(--gold);padding-bottom:2px}
+
+/* ---------- zameel ---------- */
+.zhero{display:flex;flex-wrap:wrap;align-items:center;gap:48px}
+.logo{background:var(--cream);border-radius:20px;padding:26px 22px;display:flex;flex-direction:column;align-items:center;gap:10px;width:240px;max-width:100%}
+.logo img{width:100px;height:auto}
+.logo .en1{font-family:'Libre Baskerville',serif;font-size:24px;font-weight:700;letter-spacing:.14em;color:#2E6B4B;line-height:1;direction:ltr}
+.logo .en2{font-family:'Libre Baskerville',serif;font-size:12.5px;letter-spacing:.28em;color:#2E6B4B;line-height:1;direction:ltr}
+.logo .ar{font-size:18px;font-weight:800;color:#9C7A2A;text-align:center;line-height:1.3}
+.zhero h2{margin:0;font-size:clamp(44px,6.5vw,96px);font-weight:900;line-height:1.08}
+.zrole{font-size:24px;font-weight:700;color:var(--gold-xl)}
+.mission{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:28px;margin-top:64px}
+.mission div{border-top:4px solid var(--gold-l);padding-top:18px}
+.mission b{font-size:28px;font-weight:900;color:var(--gold-xl)}
+.mission h3{margin:4px 0 0;font-size:26px;font-weight:800;line-height:1.5}
+.mission p{margin:10px 0 0;font-size:18px;line-height:1.9;color:#EFEBDD}
+.scholars{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
+.scholar{border-top:3px solid var(--gold-l);padding-top:16px}
+.scholar b{display:block;font-size:24px;font-weight:800;line-height:1.5}
+.scholar span{display:block;font-size:17px;line-height:1.8;color:#EFEBDD;margin-top:4px}
+.books .fig{max-width:300px;padding:0;background:none;box-shadow:none}
+.books .fig img{border-radius:4px}
+.books .fig:hover{box-shadow:none}
+
+/* ---------- feature rows ---------- */
+.feat{display:flex;flex-wrap:wrap;gap:48px;align-items:center}
+.feat>*{flex:1 1 360px;min-width:0}
+.feat .fig{max-width:620px}
+.feat h3{margin:0 0 16px;font-size:clamp(36px,4.2vw,54px);font-weight:900;line-height:1.2}
+.feat .k{font-size:18px;font-weight:800;color:var(--gold-t);margin-bottom:8px}
+.mid .feat .k,.dark .feat .k{color:var(--gold-xl)}
+.feat p{margin:0;font-size:20px;line-height:1.95}
+.outlets{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}
+.outlets span{flex:1 1 150px;text-align:center;padding:20px 12px;border:2px solid var(--gold-l);border-radius:14px;font-size:24px;font-weight:800}
+.badge-row{display:flex;flex-wrap:wrap;gap:20px;align-items:center;background:var(--tint);border-radius:16px;padding:20px 28px;margin-top:32px}
+.badge-row img{height:150px;width:auto;border-radius:8px}
+.badge-row p{margin:0;flex:1 1 280px;font-size:19px;line-height:1.9}
+
+/* ---------- letters ---------- */
+.letters{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:40px}
+.letter .fig{max-width:none;padding:12px}
+.letter h3{margin:18px 0 6px;font-size:22px;font-weight:800;line-height:1.5}
+.letter p{margin:0;font-size:18px;line-height:1.9;color:#3A3A32}
+
+/* ---------- contact / footer ---------- */
+.contact p{margin:0 0 24px;font-size:21px;line-height:1.9;max-width:640px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;max-width:980px}
+.cc{display:flex;flex-direction:column;gap:6px;padding:22px 26px;border:2px solid var(--gold-l);border-radius:14px;transition:background .2s,transform .2s;min-width:0}
+.cc:hover{background:rgba(217,182,93,.16);transform:translateY(-2px)}
+.cc .k{font-size:16px;font-weight:700;color:var(--gold-xl)}
+.cc b{font-size:22px;font-weight:800;overflow-wrap:anywhere;text-align:right}
+footer{background:var(--ink);color:#E9E6D6;padding:36px 72px;display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;font-size:16px}
+
+/* ---------- lightbox ---------- */
+#lb{position:fixed;inset:0;z-index:100;background:rgba(18,22,14,.92);display:none;align-items:center;justify-content:center;padding:28px}
+#lb.open{display:flex}
+#lb figure{margin:0;max-width:min(1100px,100%);max-height:100%;display:flex;flex-direction:column;align-items:center;gap:14px}
+#lb img{max-width:100%;max-height:calc(100vh - 140px);width:auto;height:auto;border-radius:6px;background:#fff}
+#lb figcaption{color:var(--cream);font-size:18px;font-weight:700;text-align:center;max-width:800px}
+.lbb{position:absolute;background:rgba(243,239,226,.14);border:0;color:#fff;width:52px;height:52px;border-radius:50%;font-size:26px;display:flex;align-items:center;justify-content:center}
+.lbb:hover{background:rgba(243,239,226,.3)}
+#lb-x{top:20px;right:20px}
+#lb-p{top:50%;right:20px;transform:translateY(-50%)}
+#lb-n{top:50%;left:20px;transform:translateY(-50%)}
+
+/* ---------- reveal ---------- */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.rv{opacity:1;transform:none;transition:none}.fig,.btn{transition:none}}
+
+/* ---------- responsive ---------- */
+@media (max-width:1023px){
+  .side{display:none}
+  .topbar{display:flex;position:sticky;top:0;z-index:50;background:var(--sage-d);color:var(--cream);align-items:center;justify-content:space-between;padding:12px 20px}
+  .topbar b{font-size:18px;font-weight:800}
+  .menu-btn{background:var(--gold-l);color:var(--on-gold);border:0;border-radius:10px;padding:8px 16px;font-size:17px;font-weight:800}
+  .drawer{display:none;position:fixed;top:56px;inset-inline:0;z-index:49;background:var(--sage-d);padding:12px 20px 24px;flex-direction:column;gap:2px;max-height:calc(100vh - 56px);overflow:auto}
+  .drawer.open{display:flex}
+  .drawer a{padding:12px 14px;border-radius:10px;font-size:19px;font-weight:700;color:#E9E6D6}
+  .drawer a.on{background:var(--gold-l);color:var(--on-gold)}
+  html{scroll-padding-top:70px}
+  .wrap{padding:64px 28px}
+  .hero{padding:48px 28px}
+  .stats{padding:40px 28px}
+  footer{padding:28px}
+}
+@media (min-width:1024px){.drawer{display:none!important}}
+</style>
+</head>
+<body>
+
+<div class="topbar"><b>د. ناصر ك.</b><button class="menu-btn" id="menu" aria-expanded="false" aria-controls="drawer">القائمة</button></div>
+<nav class="drawer" id="drawer" aria-label="التنقل"></nav>
+
+<div class="shell">
+<aside class="side">
+  <div class="brand"><div class="mono">ن</div><div><b>د. ناصر ك.</b><span>أبو حماد ناصر الأنصاري</span></div></div>
+  <nav class="nav" id="nav" aria-label="التنقل"></nav>
+  <div class="side-foot">أكاديمي · كاتب · إعلامي · مترجم</div>
+</aside>
+
+<main>
+
+<!-- HERO -->
+<section id="home">
+  <div class="hero">
+    <div class="hero-txt">
+      <div class="eyebrow">السيرة الأكاديمية والمهنية</div>
+      <h1>د. ناصر ك.</h1>
+      <div class="pen">أبو حماد ناصر الأنصاري</div>
+      <div class="chips"><span class="chip">أكاديمي</span><span class="chip">كاتب عربي</span><span class="chip">كاتب ثقافي</span><span class="chip">صحفي / إعلامي</span><span class="chip">مترجم</span></div>
+      <p>باحث ومحاضر في اللغة العربية وآدابها، نال الدكتوراه من جامعة كاليكوت عام ٢٠٢٦ بدراسة في التفسير العلمي للآيات الكونية. يكتب في الصحف والمجلات السعودية، ويعمل في الترجمة، وهو مؤسس مشارك ومنسق دولي لأكاديمية الزميل الدولية.</p>
+      <div class="btns"><a class="btn fill" href="#contact">تواصل معي</a><a class="btn line" href="#zameel">أكاديمية الزميل</a></div>
+    </div>
+    <div class="portrait"><div class="arch"><div><img src="img/portrait2.jpg" alt="الدكتور ناصر ك." width="900" height="1215"></div></div></div>
+  </div>
+  <div class="stats">
+    <div class="stat"><b>٣</b><span>أوراق بحثية قُدِّمت في مؤتمر ALLT بجامعة زايد (٢٠٢٢–٢٠٢٤)</span></div>
+    <div class="stat"><b>٣</b><span>عضويات في اتحادات ومنتديات لغوية وأدبية</span></div>
+    <div class="stat"><b>٥</b><span>منابر صحفية وإعلامية</span></div>
+    <div class="stat"><b>٤</b><span>إصدارات بين التأليف والترجمة</span></div>
+  </div>
+</section>
+
+<!-- QUALIFICATIONS -->
+<section id="qual">
+  <div class="wrap rv">
+    <div class="sec-head"><span class="n">٠١</span><h2>المؤهلات العلمية</h2></div>
+    <div class="quals">
+      <div class="q"><div class="y">٢٠٢٦</div><h3>الدكتوراه في اللغة العربية وآدابها</h3><div class="i">جامعة كاليكوت، الهند</div><p>«دراسة منهجية للتفسير العلمي للآيات الكونية في تفسير الجواهر للشيخ طنطاوي جوهري»</p></div>
+      <div class="q"><div class="y">٢١٨</div><h3>دبلوم الدراسات العليا في التجارة والإدارة باللغة العربية</h3><p>التقدير: الدرجة الأولى</p></div>
+      <div class="q"><div class="y">٢١٨</div><h3>الماجستير في اللغة العربية وآدابها</h3><div class="i">جامعة كاليكوت، الهند</div><p>التقدير: A+ (المعدل ٨٫٤١)</p></div>
+      <div class="q"><div class="y">٢١٥</div><h3>البكالوريوس — أفضل العلماء</h3><div class="i">جامعة كاليكوت، الهند</div><p>بنسبة ٩١٪</p></div>
+    </div>
+    <div class="band"><h3>دبلومات الترجمة</h3><p>دبلوم مترجم محترف معتمد — UTIA، أبريل–أغسطس ٢٠٢٤ · تقدير ممتاز</p><p>دبلوم مترجم محترف معتمد — جمعية ترجمان العرب، ٢٠٢٤–٢٠٢٥ · تقدير ممتاز</p></div>
+  </div>
+</section>
+
+<!-- ZAMEEL -->
+<section id="zameel">
+  <div class="wrap mid">
+    <div class="zhero rv">
+      <div class="logo" aria-label="شعار أكاديمية الزميل الدولية"><img src="img/logo_mark.svg" alt=""><div class="en1">ZAMEEL</div><div class="en2">INTERNATIONAL</div><div class="ar">أكاديمية الزميل العربية الدولية</div></div>
+      <div style="flex:1 1 440px;display:flex;flex-direction:column;gap:18px">
+        <div class="eyebrow">٠٢ · منذ ٢٠٢١</div>
+        <h2>أكاديمية الزميل الدولية</h2>
+        <div class="zrole">المؤسس المشارك والمنسق الدولي: د. ناصر ك.</div>
+        <p class="lead">أكاديمية دولية للغة العربية، مقرها كاليكوت بالهند، تعمل على نشر اللغة العربية والثقافة العربية بين الناطقين بغيرها، وتبني جسور التعاون مع الجامعات العربية.</p>
+      </div>
+    </div>
+    <div class="mission rv">
+      <div><b>٠١</b><h3>نشر اللغة والثقافة العربية</h3><p>تعريف الناس بالعربية وبثقافتها وحضارتها، داخل الهند وخارجها.</p></div>
+      <div><b>٠٢</b><h3>التعاون مع الجامعات العربية</h3><p>شراكات وندوات مشتركة مع أساتذة وجامعات من الخليج والعالم العربي.</p></div>
+      <div><b>٠٣</b><h3>تعليم العربية لغير الناطقين بها</h3><p>تدريس العربية تدريسًا صحيحًا لمن لغتهم الأم غيرها.</p></div>
+    </div>
+  </div>
+  <div class="wrap rv">
+    <div class="sec-head"><span class="n">٠٣</span><h2>برامج الأكاديمية</h2></div>
+    <div class="tabs" role="group" aria-label="تصفية البرامج" data-tabs="posters">
+      <button class="tab" data-f="all" aria-pressed="true">الكل</button><button class="tab" data-f="celebration" aria-pressed="false">احتفالات</button><button class="tab" data-f="seminar" aria-pressed="false">ندوات</button>
+      <a class="link" href="https://youtube.com/playlist?list=PLhpN5CbDq46LBDXJ0cychw1AtDPk_FBtK">قائمة تشغيل ندوات الأكاديمية على يوتيوب</a>
+    </div>
+    <div class="grid" id="posters"></div>
+  </div>
+  <div class="wrap dark rv">
+    <div class="sec-head"><span class="n">٠٤</span><h2>ضيوف الأكاديمية</h2></div>
+    <div class="scholars">
+      <div class="scholar"><b>أ.د. سيف الدين طه سالم الفقراء</b><span>أستاذ، قسم اللغة العربية وآدابها، جامعة الشارقة — عضو هيئة الاستشارة بالأكاديمية</span></div>
+      <div class="scholar"><b>أ.د. أبو المعاطي خيري الرمادي</b><span>أستاذ الأدب والنقد الحديث، جامعة الملك سعود، الرياض — عضو هيئة الاستشارة بالأكاديمية</span></div>
+      <div class="scholar"><b>د. محمد الحوراني</b><span>رئيس قسمي اللغة العربية وآدابها والدراسات الإسلامية، جامعة العين، مقر أبوظبي</span></div>
+      <div class="scholar"><b>أ.د. رضوان الرحمن</b><span>أستاذ قسم اللغة العربية، جامعة جواهر لال نهرو، نيودلهي</span></div>
+      <div class="scholar"><b>د. رياض صالح جنزرلي</b><span>أستاذ اللغة العربية والدراسات الإسلامية والتربية، وعضو إعداد مناهج تعليم العربية لغير الناطقين بها</span></div>
+      <div class="scholar"><b>د. سعيد بن مخاشن</b><span>المدير العام لأكاديمية الزميل، وأستاذ مساعد بجامعة مولانا آزاد الوطنية الأردية، حيدرآباد</span></div>
+    </div>
+  </div>
+  <div class="wrap tint rv">
+    <div class="sec-head"><span class="n">٠٥</span><h2>إصدارات الزميل الدولي للنشر</h2></div>
+    <div class="grid books">
+      <figure class="fig"><button data-lb="books" data-cap="The Bright Future — ترجمة: ناصر ك."><img src="img/book_bright.jpg" alt="غلاف The Bright Future" loading="lazy"></button><figcaption><h4>The Bright Future</h4><div class="m">ترجمة: ناصر ك.</div></figcaption></figure>
+      <figure class="fig"><button data-lb="books" data-cap="لكل شيء وقت — مجموعة مقالات"><img src="img/book_waqt.jpg" alt="غلاف لكل شيء وقت" loading="lazy"></button><figcaption><h4>لكل شيء وقت</h4><div class="m">مجموعة مقالات — أبو حماد ناصر ك.</div></figcaption></figure>
+      <figure class="fig"><button data-lb="books" data-cap="The Ship and the Ocean — ترجمة: ك. م. رشيد"><img src="img/book_ship.jpg" alt="غلاف The Ship and the Ocean" loading="lazy"></button><figcaption><h4>The Ship and the Ocean</h4><div class="m">ترجمة: ك. م. رشيد</div></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- RESEARCH -->
+<section id="research">
+  <div class="wrap dark rv">
+    <div class="feat">
+      <div>
+        <div class="eyebrow">٠٦</div>
+        <h2 style="margin:12px 0 18px;font-size:clamp(44px,6vw,92px);font-weight:900;line-height:1.05">البحث والمؤتمرات</h2>
+        <p class="lead" style="color:#E9E6D6">ثلاث مشاركات بأوراق بحثية في مؤتمر اللسانيات التطبيقية وتعليم اللغات بجامعة زايد، وندوات دولية ينسّقها، وأطروحة دكتوراه نوقشت في جامعة كاليكوت.</p>
+      </div>
+      <figure class="fig" style="background:none;box-shadow:none;padding:0;max-width:420px"><button data-lb="allt" data-cap="الدكتور ناصر يقدّم ورقته في ALLT 2024"><img src="img/r_allt_slide.jpg" alt="الدكتور ناصر في مؤتمر ALLT 2024" style="border-radius:14px;border:3px solid var(--gold-l)"></button></figure>
+    </div>
+  </div>
+  <div class="wrap rv">
+    <div class="sec-head"><span class="n">٠٧</span><h2>مؤتمر ALLT — جامعة زايد</h2></div>
+    <div class="grid">
+      <figure class="fig"><button data-lb="allt" data-cap="شهادة تقدير — ALLT 2022"><img src="img/r_allt22.jpg" alt="شهادة ALLT 2022" loading="lazy"></button><figcaption><div class="y">٢٠٢٢</div><h4>ALLT 2022 — المؤتمر الافتراضي الرابع</h4><div class="m">جامعة زايد، ٣–٥ مارس ٢٠٢٢</div></figcaption></figure>
+      <figure class="fig"><button data-lb="allt" data-cap="شهادة تقدير — ALLT 2023"><img src="img/r_allt23.jpg" alt="شهادة ALLT 2023" loading="lazy"></button><figcaption><div class="y">٢٠٢٣</div><h4>ALLT 2023 — المؤتمر الخامس</h4><div class="m">«التجربة التدريسية في تعليم العربية لغير الناطقين بها: العربية بالهند أنموذجًا» — جامعة زايد، دبي، ٣–٥ مارس ٢٠٢٣</div></figcaption></figure>
+      <figure class="fig"><button data-lb="allt" data-cap="شهادة تقدير — ALLT 2024"><img src="img/r_allt24.jpg" alt="شهادة ALLT 2024" loading="lazy"></button><figcaption><div class="y">٢٠٢٤</div><h4>ALLT 2024 — المؤتمر السادس</h4><div class="m">«استعمال التكنولوجيا في تعليم اللغة العربية» — جامعة زايد، دبي، ١–٣ مارس ٢٠٢٤</div></figcaption></figure>
+    </div>
+    <div class="badge-row"><button data-lb="allt" data-cap="بطاقة المقدِّم — ALLT 2024" style="all:unset;cursor:zoom-in"><img src="img/r_allt_badge.jpg" alt="بطاقة المقدِّم في ALLT 2024" loading="lazy"></button><p>بطاقة «Presenter» في المؤتمر الدولي السادس للسانيات التطبيقية وتعليم اللغات، جامعة زايد، دبي.</p></div>
+  </div>
+  <div class="wrap tint rv">
+    <div class="sec-head"><span class="n">٠٨</span><h2>سلسلة «آفاق اللغة العربية»</h2></div>
+    <p class="lead" style="margin-bottom:36px">سلسلة ندوات دولية عبر الإنترنت ينظمها قسم اللغة العربية بكلية دار العلوم العربية، فازكاد، بالتعاون مع قسم اللغة العربية بجامعة كاليكوت، وينسّقها الدكتور ناصر ك. بمشاركة أساتذة من دول الخليج.</p>
+    <div class="grid">
+      <figure class="fig"><button data-lb="series" data-cap="العربية في عصر الذكاء الاصطناعي — الجمعة ٣١ أكتوبر ٢٠٢٥"><img src="img/r_post80.jpg" alt="ملصق الندوة" loading="lazy"></button><figcaption><h4>العربية في عصر الذكاء الاصطناعي</h4><div class="m">أ.د. سيف الدين طه الفقراء — الجمعة ٣١ أكتوبر ٢٠٢٥</div></figcaption></figure>
+      <figure class="fig"><button data-lb="series" data-cap="الكفاية الثقافية عبر برامج تعلم العربية — الجلسة الثالثة"><img src="img/r_post81.jpg" alt="ملصق الجلسة الثالثة" loading="lazy"></button><figcaption><h4>الكفاية الثقافية عبر برامج تعلم العربية</h4><div class="m">الجلسة الثالثة — ١٤ نوفمبر</div></figcaption></figure>
+      <figure class="fig"><button data-lb="series" data-cap="تقنيات السرد في الرواية العربية — الجلسة السادسة"><img src="img/r_post83.jpg" alt="ملصق الجلسة السادسة" loading="lazy"></button><figcaption><h4>تقنيات السرد في الرواية العربية</h4><div class="m">الجلسة السادسة — ٥ ديسمبر</div></figcaption></figure>
+    </div>
+  </div>
+  <div class="wrap rv">
+    <div class="sec-head"><span class="n">٠٩</span><h2>أطروحة الدكتوراه</h2></div>
+    <div class="grid">
+      <figure class="fig" style="max-width:560px;flex-basis:320px"><button data-lb="viva" data-cap="مناقشة الدكتوراه — جامعة كاليكوت"><img src="img/r_viva1.jpg" alt="مناقشة الدكتوراه في جامعة كاليكوت" loading="lazy"></button></figure>
+      <figure class="fig" style="max-width:320px;flex-basis:220px"><button data-lb="viva" data-cap="عرض نتائج البحث"><img src="img/r_viva2.jpg" alt="عرض نتائج البحث" loading="lazy"></button></figure>
+      <div style="flex:1 1 320px"><div style="font-size:22px;font-weight:800;color:var(--sage-d)">جامعة كاليكوت، ٢٠٢٦</div><p style="margin:10px 0 0;font-size:20px;line-height:1.95">«دراسة منهجية للتفسير العلمي للآيات الكونية في تفسير الجواهر للشيخ طنطاوي جوهري».</p></div>
+    </div>
+  </div>
+  <div class="wrap mid rv">
+    <div class="feat">
+      <figure class="fig" style="max-width:380px"><button data-lb="lec" data-cap="محاضرة: واقع اللغة العربية في الهند — منطقة كيرلا أنموذجًا"><img src="img/r_lecture.jpg" alt="ملصق المحاضرة" loading="lazy"></button></figure>
+      <div><div class="k">١٠ · محاضرة</div><h3>واقع اللغة العربية في الهند</h3><p>«منطقة كيرلا أنموذجًا» — محاضرة بدعوة من مركز الأمير عبدالمحسن بن جلوي للبحوث والدراسات الإسلامية، بثٌّ مباشر عبر زووم، فبراير ٢٠٢٦.</p></div>
+    </div>
+  </div>
+  <div class="wrap rv">
+    <div class="sec-head"><span class="n">١١</span><h2>التدريس</h2></div>
+    <p class="lead" style="max-width:860px;line-height:2.05">محاضر زائر في كلية دار العلوم العربية، فازكاد (١٤ يوليو ٢٠٢٥ – ٣١ مارس ٢٠٢٦): درّس أدب التفسير والحديث، والنحو، والبلاغة، والكتابة الإبداعية على مستوى الدرجة الجامعية، وأرشد طلبة السنة الأولى، وأشرف على خمسة مشاريع تخرج في اللغة العربية والترجمة.</p>
+  </div>
+</section>
+
+<!-- MEDIA -->
+<section id="media">
+  <div class="wrap dark rv">
+    <div class="eyebrow">١٢</div>
+    <h2 style="margin:12px 0 18px;font-size:clamp(44px,6.5vw,104px);font-weight:900;line-height:1.05">الصحافة والإعلام</h2>
+    <p class="lead" style="color:#E9E6D6">كاتب رأي في الصحف والمجلات العربية، وضيف على الإذاعة، ومحل تغطية صحفية لأطروحته. وهذه نماذج مما نُشر.</p>
+    <div class="outlets"><span>فرقد</span><span>صدى نيوز</span><span>الشرق العربي</span><span>آخر الأخبار</span><span>إذاعة الرياض</span></div>
+  </div>
+  <div class="wrap rv">
+    <div class="feat">
+      <figure class="fig" style="background:var(--ink);padding:14px"><button data-lb="media" data-cap="حلقة برنامج الإيوان — إذاعة الرياض"><img src="img/press_radio.jpg" alt="حلقة برنامج الإيوان" style="border-radius:8px"></button></figure>
+      <div><div class="k">حوار إذاعي</div><h3>ضيف برنامج «الإيوان» على إذاعة الرياض</h3><p>استضافته إذاعة الرياض كاتبًا وباحثًا أكاديميًا للحديث عن جهود المملكة العربية السعودية في نشر ثقافة اللغة العربية لغير الناطقين بها حول العالم. مدة الحلقة نحو ست دقائق.</p></div>
+    </div>
+  </div>
+  <div class="wrap tint rv">
+    <div class="feat">
+      <div><div class="k">تغطية صحفية</div><h3>مناقشة الدكتوراه في الصحافة</h3><p>نشر موقع «صدى نيوز» خبر مناقشة أطروحته في جامعة كاليكوت حول التفسير العلمي للآيات الكونية، مع صورة من قاعة المناقشة.</p></div>
+      <figure class="fig"><button data-lb="media" data-cap="خبر مناقشة الدكتوراه — صدى نيوز"><img src="img/press_sada.jpg" alt="خبر مناقشة الدكتوراه — صدى نيوز" loading="lazy"></button></figure>
+    </div>
+  </div>
+  <div class="wrap rv">
+    <div class="sec-head"><span class="n">١٣</span><h2>مقالات وتقارير</h2></div>
+    <div class="grid">
+      <figure class="fig"><button data-lb="media" data-cap="إضاءات قرآنية على مفهوم التعلم الذاتي"><img src="img/press_quran.jpg" alt="مقال: إضاءات قرآنية" loading="lazy"></button><figcaption><h4>إضاءات قرآنية على مفهوم التعلم الذاتي</h4><div class="m">مقال رأي</div></figcaption></figure>
+      <figure class="fig"><button data-lb="media" data-cap="الارتباط العربي بكيرلا.. الماضي والحاضر"><img src="img/press_kerala.jpg" alt="مقال: الارتباط العربي بكيرلا" loading="lazy"></button><figcaption><h4>الارتباط العربي بكيرلا.. الماضي والحاضر</h4><div class="m">مقال رأي</div></figcaption></figure>
+      <figure class="fig"><button data-lb="media" data-cap="السياحة في كيرلا مع حلول إجازة الصيف"><img src="img/press_tour.jpg" alt="مقال: السياحة في كيرلا" loading="lazy"></button><figcaption><h4>السياحة في كيرلا مع حلول إجازة الصيف</h4><div class="m">مقال رأي</div></figcaption></figure>
+      <figure class="fig"><button data-lb="media" data-cap="البلد الأمين"><img src="img/press_balad.jpg" alt="مقال: البلد الأمين" loading="lazy"></button><figcaption><h4>البلد الأمين</h4><div class="m">مقال رأي</div></figcaption></figure>
+      <figure class="fig"><button data-lb="media" data-cap="كيرلا وجهة العرب للعلاج الطبيعي"><img src="img/press_health.jpg" alt="مقال: كيرلا وجهة العرب للعلاج الطبيعي" loading="lazy"></button><figcaption><h4>كيرلا وجهة العرب للعلاج الطبيعي</h4><div class="m">مقال رأي</div></figcaption></figure>
+      <figure class="fig"><button data-lb="media" data-cap="تقرير ثقافي عن علماء كيرلا — الشرق العربي"><img src="img/press_sharq.jpg" alt="صفحة الثقافة في الشرق العربي" loading="lazy"></button><figcaption><h4>تقرير ثقافي عن علماء كيرلا</h4><div class="m">صفحة الثقافة — الشرق العربي</div></figcaption></figure>
+    </div>
+  </div>
+  <div class="wrap mid rv">
+    <div class="feat">
+      <figure class="fig" style="max-width:380px"><button data-lb="media" data-cap="خطاب شكر وتقدير من صحيفة آخر الأخبار"><img src="img/press_thanks.jpg" alt="خطاب شكر وتقدير" loading="lazy"></button></figure>
+      <div><div class="k">١٤</div><h3>شكر وتقدير</h3><p>خطاب من رئيس تحرير صحيفة «آخر الأخبار» (١٤٤٧/٠٢/٢٧هـ) يشكر فيه الأستاذ أبا حماد الأنصاري على مقالاته وإسهامه في خدمة الكلمة الصادقة.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTS -->
+<section id="certs">
+  <div class="wrap rv">
+    <div class="sec-head"><span class="n">١٥</span><h2>العضويات</h2></div>
+    <p class="lead" style="margin-bottom:36px">ثلاث عضويات مهنية في اتحادات ومنتديات لغوية وأدبية.</p>
+    <div class="grid">
+      <figure class="fig"><button data-lb="mem" data-cap="شهادة عضوية — الاتحاد الدولي للغة العربية"><img src="img/c_aru.jpg" alt="شهادة عضوية الاتحاد الدولي للغة العربية" loading="lazy"></button><figcaption><h4>الاتحاد الدولي للغة العربية</h4><div class="m">عضوية ٢٠٢٠–٢٠٢٢</div></figcaption></figure>
+      <figure class="fig"><button data-lb="mem" data-cap="شهادة عضوية — الاتحاد الدولي للغات والترجمة (IULT)"><img src="img/c_iult.jpg" alt="شهادة عضوية IULT" loading="lazy"></button><figcaption><h4>الاتحاد الدولي للغات والترجمة (IULT)</h4><div class="m">عضوية ٢٠٢١–٢٠٢٣</div></figcaption></figure>
+      <figure class="fig"><button data-lb="mem" data-cap="بطاقة عضوية — الملتقى العربي للأدباء"><img src="img/c_alf.jpg" alt="بطاقة عضوية الملتقى العربي للأدباء" loading="lazy"></button><figcaption><h4>الملتقى العربي للأدباء</h4><div class="m">بطاقة عضوية رقم ٣١ — ٢٠٢٥</div></figcaption></figure>
+    </div>
+  </div>
+  <div class="wrap tint rv">
+    <div class="sec-head"><span class="n">١٦</span><h2>معرض الشهادات</h2></div>
+    <div class="tabs" role="group" aria-label="تصفية الشهادات" data-tabs="certgrid">
+      <button class="tab" data-f="all" aria-pressed="true">الكل</button><button class="tab" data-f="academic" aria-pressed="false">مؤهلات علمية</button><button class="tab" data-f="training" aria-pressed="false">دورات ومشاركات</button><button class="tab" data-f="recognition" aria-pressed="false">شكر وتقدير</button>
+    </div>
+    <div class="grid" id="certgrid"></div>
+  </div>
+</section>
+
+<!-- LETTERS -->
+<section id="letters">
+  <div class="wrap rv">
+    <div class="sec-head"><span class="n">١٧</span><h2>خطابات التوصية</h2></div>
+    <div class="letters">
+      <div class="letter">
+        <figure class="fig"><button data-lb="letters" data-cap="خطاب توصية — أ.د. عبد المجيد إي، جامعة كاليكوت"><img src="img/c_letter_calicut.jpg" alt="خطاب توصية من جامعة كاليكوت" loading="lazy"></button></figure>
+        <h3>أ.د. عبد المجيد إي — قسم اللغة العربية، جامعة كاليكوت</h3>
+        <p>باحثًا متميزًا ومربيًا مخلصًا، يحمل شغفًا عميقًا بخدمة اللغة العربية وآدابها، ونجح في تقديم دورات وبرامج تدريبية في اللغة العربية.</p>
+      </div>
+      <div class="letter">
+        <figure class="fig"><button data-lb="letters" data-cap="خطاب توصية — د. عبد السلام آي بي، كلية دار العلوم العربية"><img src="img/c_letter_duac.jpg" alt="خطاب توصية من كلية دار العلوم العربية" loading="lazy"></button></figure>
+        <h3>د. عبد السلام آي بي — مدير كلية دار العلوم العربية، فازكاد</h3>
+        <p>محاضر زائر من ١٤ يوليو ٢٠٢٥ إلى ٣١ مارس ٢٠٢٦، ونسّق سلسلة ندوات دولية عن اللغة العربية وثقافتها بمشاركة أساتذة من دول الخليج.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap mid contact rv">
+    <div class="sec-head"><span class="n">١٨</span><h2>تواصل</h2></div>
+    <p>للتعاون الأكاديمي والمحاضرات والكتابة والترجمة.</p>
+    <div class="cards">
+      <a class="cc" href="tel:+971588397050"><span class="k">الهاتف</span><b dir="ltr">+971 58 839 7050</b></a>
+      <a class="cc" href="mailto:drnazerk2025@gmail.com"><span class="k">البريد الإلكتروني</span><b dir="ltr">drnazerk2025@gmail.com</b></a>
+      <a class="cc" href="https://www.linkedin.com/in/dr-nazer-k-484657245"><span class="k">لينكدإن</span><b dir="ltr">linkedin.com/in/dr-nazer-k-484657245</b></a>
+    </div>
+    
+  </div>
+</section>
+
+<footer><div>© الدكتور ناصر ك. — أبو حماد ناصر الأنصاري</div><div>جميع الحقوق محفوظة</div></footer>
+</main>
+</div>
+
+<div id="lb" role="dialog" aria-modal="true" aria-label="عرض الصورة">
+  <button class="lbb" id="lb-x" aria-label="إغلاق">✕</button>
+  <button class="lbb" id="lb-p" aria-label="السابق">›</button>
+  <button class="lbb" id="lb-n" aria-label="التالي">‹</button>
+  <figure><img id="lb-img" alt=""><figcaption id="lb-cap"></figcaption></figure>
+</div>
+
+<script>
+(function(){
+  var NAV=[['home','الرئيسية'],['qual','المؤهلات العلمية'],['zameel','أكاديمية الزميل'],['research','البحث والمؤتمرات'],['media','الصحافة والإعلام'],['certs','العضويات والشهادات'],['letters','التوصيات'],['contact','تواصل']];
+  var html=NAV.map(function(n){return '<a href="#'+n[0]+'" data-s="'+n[0]+'">'+n[1]+'</a>';}).join('');
+  document.getElementById('nav').innerHTML=html;
+  var drawer=document.getElementById('drawer');drawer.innerHTML=html;
+  var menu=document.getElementById('menu');
+  menu.addEventListener('click',function(){var o=drawer.classList.toggle('open');menu.setAttribute('aria-expanded',o);});
+  drawer.addEventListener('click',function(){drawer.classList.remove('open');menu.setAttribute('aria-expanded','false');});
+
+  /* scroll spy */
+  var links=document.querySelectorAll('[data-s]');
+  function spy(){
+    var cur='home',y=window.scrollY+160;
+    NAV.forEach(function(n){var el=document.getElementById(n[0]);if(el&&el.offsetTop<=y)cur=n[0];});
+    links.forEach(function(a){a.classList.toggle('on',a.dataset.s===cur);});
+  }
+  window.addEventListener('scroll',spy,{passive:true});spy();
+
+  /* reveal */
+  var rv=document.querySelectorAll('.rv');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.06});
+    rv.forEach(function(e){io.observe(e);});
+  }else rv.forEach(function(e){e.classList.add('in');});
+
+  /* filterable galleries */
+  var DATA={
+    posters:[
+      {c:'celebration',i:'img/poster_open.jpg',t:'جلسة الافتتاح — الاحتفال باليوم العالمي للغة العربية ٢٠٢٤',m:'١٣ ديسمبر ٢٠٢٤'},
+      {c:'seminar',i:'img/poster_18dec.jpg',t:'الجلسة الأولى للندوة الدولية الافتراضية',m:'١٨ ديسمبر ٢٠٢٤'},
+      {c:'celebration',i:'img/poster_prog.jpg',t:'برنامج الاحتفال: ندوات وورش عمل وجلسات أدبية ومسابقات',m:'١٣–٣١ ديسمبر ٢٠٢٤'}],
+    certgrid:[
+      {c:'academic',i:'img/c_phd.jpg',t:'الدكتوراه في اللغة العربية — جامعة كاليكوت',m:'٢٠٢٦'},
+      {c:'academic',i:'img/c_ma.jpg',t:'الماجستير في اللغة العربية وآدابها — جامعة كاليكوت',m:'٢١٨'},
+      {c:'academic',i:'img/c_ba.jpg',t:'البكالوريوس (أفضل العلماء) — جامعة كاليكوت',m:'٢١٥'},
+      {c:'training',i:'img/c_jusoor.jpg',t:'تأهيل مدرِّبين لتعليم العربية للناطقين بغيرها — منصة جسور',m:'٦٠ ساعة تدريبية، ٢٠٢٦'},
+      {c:'training',i:'img/c_emirates.jpg',t:'شهادة مشاركة — المسابقة الثقافية، ملتقى الإبداع العربي',m:'أغسطس ٢٠٢٤'},
+      {c:'recognition',i:'img/c_madarin.jpg',t:'شهادة شكر وتقدير — مؤسسة مدارج القيادة',m:'٢١ نوفمبر ٢٠٢٦'},
+      {c:'recognition',i:'img/c_family.jpg',t:'شهادة تقدير — مجلة Familierecht',m:'أكتوبر ٢٠٢٦'}]
+  };
+  function esc(s){return s.replace(/"/g,'&quot;');}
+  function render(id,f){
+    var box=document.getElementById(id);
+    box.innerHTML=DATA[id].filter(function(p){return f==='all'||p.c===f;}).map(function(p){
+      return '<figure class="fig'+(id==='certgrid'?' sm':'')+'"><button data-lb="'+id+'" data-cap="'+esc(p.t)+'"><img src="'+p.i+'" alt="'+esc(p.t)+'" loading="lazy"></button><figcaption><h4>'+p.t+'</h4><div class="m">'+p.m+'</div></figcaption></figure>';
+    }).join('');
+  }
+  document.querySelectorAll('[data-tabs]').forEach(function(g){
+    var id=g.dataset.tabs;render(id,'all');
+    g.addEventListener('click',function(e){
+      var b=e.target.closest('.tab');if(!b)return;
+      g.querySelectorAll('.tab').forEach(function(t){t.setAttribute('aria-pressed',t===b);});
+      render(id,b.dataset.f);
+    });
+  });
+
+  /* lightbox */
+  var lb=document.getElementById('lb'),li=document.getElementById('lb-img'),lc=document.getElementById('lb-cap'),list=[],idx=0,opener=null;
+  function show(){var b=list[idx],im=b.querySelector('img');li.src=im.src;li.alt=im.alt;lc.textContent=b.dataset.cap||im.alt;
+    var multi=list.length>1;document.getElementById('lb-p').style.display=multi?'flex':'none';document.getElementById('lb-n').style.display=multi?'flex':'none';}
+  function open(b){opener=b;list=[].slice.call(document.querySelectorAll('[data-lb="'+b.dataset.lb+'"]'));idx=list.indexOf(b);show();lb.classList.add('open');document.body.style.overflow='hidden';document.getElementById('lb-x').focus();}
+  function close(){lb.classList.remove('open');document.body.style.overflow='';if(opener)opener.focus();}
+  function step(d){idx=(idx+d+list.length)%list.length;show();}
+  document.addEventListener('click',function(e){var b=e.target.closest('[data-lb]');if(b)open(b);});
+  document.getElementById('lb-x').onclick=close;
+  document.getElementById('lb-p').onclick=function(){step(-1);};
+  document.getElementById('lb-n').onclick=function(){step(1);};
+  lb.addEventListener('click',function(e){if(e.target===lb)close();});
+  document.addEventListener('keydown',function(e){
+    if(!lb.classList.contains('open'))return;
+    if(e.key==='Escape')close();
+    if(e.key==='ArrowLeft')step(1);
+    if(e.key==='ArrowRight')step(-1);
+  });
+})();
+</script>
+</body>
+</html>
